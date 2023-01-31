@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/vazir/Vazir.eot');
+    src: url('../fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/vazir/Vazir.woff2') format('woff2'),
+        url('../fonts/vazir/Vazir.woff') format('woff'),
+        url('../fonts/vazir/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/vazir/Vazir-Bold.eot');
+    src: url('../fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/vazir/Vazir-Bold.woff2') format('woff2'),
+        url('../fonts/vazir/Vazir-Bold.woff') format('woff'),
+        url('../fonts/vazir/Vazir-Bold.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_Bold.eot');
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Bold.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_Medium.eot');
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Medium.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_Light.eot');
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Light.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_UltraLight.eot');
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_UltraLight.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum_UltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum.eot');
+    src: url('../fonts/IRANSansWeb/IRANSansWebFaNum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('../fonts/IRANSansWeb/IRANSansWebFaNum.ttf') format('truetype');
+}
+
+
+
+
+body {
+    font-family: 'IRANSans',  Arial, sans-serif;
+    font-weight: normal;
+
+    background-image: url('../photo/background2.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    Background-attachment: fixed;
+    background-size: cover;
+
+}
+.sbmuLogo {
+    text-align: center !important;
+    height: 8rem;
+}

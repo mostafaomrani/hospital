@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <%- include("./header.ejs") %>
+    <form action="/form" role="form" class=" justify-content-center " method="POST">
+      <div class="p-5  mt-2 row rtl rounded-lg border border-Secondary  bg-light  "
+        style="opacity: 0.9;margin-left: 18%; margin-right: 18%;">
+        <%- include("./messages.ejs") %>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="title">1)عنوان ابتکار تجربه</label>
+            <textarea name="title" type="text" class="form-control class=" font-weight-light id="title"
+              rows="3"></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="keyWords">2)کلمات کلیدی</label>
+            <textarea name="keyWords" type="text" class="form-control" id="keyWords" rows="3"
+              placeholder="کلیدواژه های مرتبط با تجربه و ابتکارات..."></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="challenge">3)چالش یا مسأله زمینه ساز و تجربه</label>
+            <textarea name="challenge" type="text" class="form-control" id="challenge" rows="3"
+              placeholder="مسئله و چالش های که زمینه ساز ابتکارات و تجربه بوده است را با ذکر جزئیات کافی بیان کنید. مشکل در کدام واحد و قسمت وجود داشته است. توضیحات به نحوی باشد که اهمیت مسأله به خوبی بیان شود."></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="description">4)شرح ابتکار و تجربه</label>
+            <textarea name="description" type="text" class="form-control" id="description" rows="3"
+              placeholder="اهداف ابتکار چه بوده است؟ با ذکر جزئیات کافی گام ها و مراحل اجرایی تجربه را بیان کنید. چه کسانی مشارکت داشتند؟ چه منابعی استفاده شده است؟ چه گام هایی طی شده است؟"></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="timeAndPlace">5)زمان و محل تجربه</label>
+            <textarea name="timeAndPlace" type="text" class="form-control" id="timeAndPlace" rows="3"
+              placeholder="..."></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="result">6)نتایج و آثار اجرای تجربه</label>
+            <textarea name="result" type="text" class="form-control" id="result" rows="3"
+              placeholder="نتایج و تأثیرات اجرای ابتکار و تجربه بر کیفیت و بهره وری چیست؟ از نظر زمان، هزینه، ایمنی، کیفیت و عملکرد چه دستاورد و ارتقائی ایجاد شده است؟"></textarea>
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="recommendation">7)درس آموخته ها و توصیه های حاصل از تجربه</label>
+            <textarea name="recommendation" type="text" class="form-control" id="recommendation" rows="3"
+              placeholder="اجرای ابتکار و تجربه چه چیزهایی به ما یاد داده است که در آینده و سایر زمینه ها کمک کننده است؟ مثلاً موانع اجرایی ابتکار چه بوده است؟ پیشنهاد برای اجرای ابتکار در سایر مراکز چیست؟"></textarea>
+          </div>
+          <div class="col-lg-12 form-group">
+            <button type="submit" class="btn btn-secondary btn-lg btn-block border border-white">ثبت</button>
+
+          </div>
+      </div>
+
+    </form>
+    <div class="mb-5  row bg-dark text-white text-center" style="margin-left: 18%; margin-right: 18%;">
+      Design by Mahdi Yarmohamadi
+    </div>
+</body>
+
+</html>

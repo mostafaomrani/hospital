@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>
+        <%= pageTitle %>
+    </title>
+</head>
+
+<body>
+    <div class="p-5 mt-5 container row rtl rounded-lg border border-Secondary bg-light"
+        style="opacity: 0.9; margin-left: 18%; margin-right: 18%">
+        <div class="col-lg-12 form-group">
+            <h1 class="text-center font-weight-bold">برندگان مسابقه روز دانشجو</h1>
+        </div>
+        <div class="col-lg-12 form-group">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">کد</th>
+                        <th scope="col">نام</th>
+                        <th scope="col">نام خانوادگی</th>
+                        <th scope="col">سن</th>
+                        <th scope="col">جنسیت</th>
+                        <th scope="col">کدملی</th>
+                        <th scope="col">شماره موبایل</th>
+                    </tr>
+                </thead>
+
+                <% for (let lotteryPerson of lotteryPeople){ %>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <%= lotteryPerson.personId %>
+                            </th>
+                            <td>
+                                <%= lotteryPerson.firstName %>
+                            </td>
+                            <td>
+                                <%= lotteryPerson.lastName %>
+                            </td>
+                            <td>
+                                <%= lotteryPerson.age %>
+                            </td>
+                            <td>
+                                <%= lotteryPerson.isMale %>
+                            </td>
+                            <td>
+                                <%= lotteryPerson.meliCode %>
+                            </td>
+                            <td>
+                                <%= lotteryPerson.mobile %>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

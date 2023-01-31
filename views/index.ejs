@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/people" role="form" class=" justify-content-center " method="POST">
+    <div class="p-5 mt-5 container row rtl rounded-lg border border-Secondary  bg-light  "
+      style="opacity: 0.9;margin-left: 18%; margin-right: 18%;">
+
+      <div class="col-lg-12 form-group">
+        <h1 class="text-center font-weight-bold">سامانه تستی آموزش نود جی اس</h1>
+        <%- include("./messages.ejs") %>
+      </div>
+      <div class="col-lg-12 form-group">
+        <label for="personId">کد</label>
+        <input name="personId" type="number" class="form-control" id="personId" placeholder="لطفا کد خود را وارد کنید">
+      </div>
+      <div class="col-lg-6 form-group">
+        <label for="firstName">نام</label>
+        <input name="firstName" type="text" class="form-control" id="firstName" placeholder="لطفا نام خود را وارد کنید">
+      </div>
+      <div class="col-lg-6 form-group">
+        <label for="lastName">نام خانوادگی</label>
+        <input name="lastName" type="text" class="form-control" id="lastName"
+          placeholder="لطفا نام خانوادگی خود را وارد کنید">
+      </div>
+      <div class="col-lg-6 form-group">
+        <label for="age">سن</label>
+        <input name="age" type="number" class="form-control" id="age" placeholder="لطفا سن خود را وارد کنید">
+      </div>
+      <div class="col-lg-6 form-group">
+        <label for="isMale">جنسیت</label>
+        <select name="isMale" class="form-control" id="isMale">
+          <option selected>لطفا جنسیت خود را وارد کنید</option>
+          <option value="true">مرد</option>
+          <option value="false">زن</option>
+        </select>
+      </div>
+      <div class="col-lg-6 form-group">
+        <label for="meliCode">کدملی</label>
+        <input name="meliCode" type="number" class="form-control" id="meliCode" placeholder="لطفا کدملی خود را وارد کنید">
+      </div>
+      <div class="col-lg-6 form-group">
+        <label for="mobile">شماره موبایل</label>
+        <input name="mobile" type="mobile" class="form-control" id="mobile name"
+          placeholder="لطفا شماره موبایل خود را وارد کنید">
+      </div>
+      <div class="col-lg-12 form-group">
+        <button type="submit" class="btn btn-secondary btn-lg btn-block border border-white">ثبت</button>
+
+      </div>
+    </div>
+
+  </form>
+  <div class="container row bg-dark text-white text-center" style="margin-left: 18%; margin-right: 18%;">
+    Design by Mahdi Yarmohamadi
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="col-12 justify-content-center">
+    <div style="opacity: 0.9; margin-left: 17.5%; margin-right: 17.5%;" class="text-center p-2 mt-5 rounded-lg border border-Secondary bg-light" >
+      <div class="text-center"><img class="sbmuLogo" src="/photo/sbmu.png" alt=""></div>
+      <h2 class="text-center font-weight-bold">ابتکارات و تجربیات بهره وری</h2>
+      <h3 class="text-center font-weight-bold">دانشگاه علوم پزشکی شهید بهشتی</h3>
+    </div>
+  </div>
+  <%- include("./messages.ejs") %>
+
+    <form action="/login" role="form" class=" justify-content-center " method="POST">
+      <div class="p-5  mt-2 row rtl rounded-lg border border-Secondary  bg-light  "
+        style="opacity: 0.9;margin-left: 18%; margin-right: 18%;">
+        <%- include("./messages.ejs") %>
+        <%- include("./includes/loginMessages.ejs") %>
+
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="userName">نام کاربری</label>
+            <input name="userName" type="text" class="form-control class=" font-weight-light id="userName">
+          </div>
+          <div class="col-12 form-group">
+            <label class="font-weight-bold" for="password">کلمه عبور</label>
+            <input name="password" type="text" class="form-control" id="password">
+          </div>
+          <div class="col-lg-12 form-group">
+            <button type="submit" class="btn btn-secondary btn-lg btn-block border border-white">ورود</button>
+
+          </div>
+      </div>
+
+    </form>
+
+    <div class="mb-5  row bg-dark text-white text-center" style="margin-left: 18%; margin-right: 18%;">
+      Design by Mahdi Yarmohamadi
+    </div>
+    <script>
+      function redirect() {
+        redirect('./form.ejs');
+      }
+
+    </script>
+</body>
+
+</html>
