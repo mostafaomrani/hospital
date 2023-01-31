@@ -80,8 +80,8 @@ ideasRouter.post(
 );
 
 /** DELETE Method */
-ideasRouter.delete(
-  '/:id',
+ideasRouter.get(
+  '/del/:id',
   nextify(async (req, res) => {
     const id = req.params.id;
     const idea = await Idea.query().findById(id)
@@ -92,12 +92,30 @@ ideasRouter.delete(
       });
     } else {
       await Idea.query().deleteById(id)
-      res.status(204).end();
+      res.redirect('/dashboard');
     }
   })
 );
 
 /** PATCH Method */
+ideasRouter.get(
+  '/edit/:id',
+  basicAuth,
+  nextify(async (req, res) => {
+    const id = req.params.id;
+    const patch = req.body;
+    const idea = await Idea.query().findById(id)
+res.render
+    if (idea == null) {
+      return res.status(404).json({
+        message: 'PATCH Not Found',
+      });
+    } else {
+      await Idea.query().findById(id).patch(patch)
+      res.status(204).end();
+    }
+  })
+);
 ideasRouter.patch(
   '/:id',
   basicAuth,
